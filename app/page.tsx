@@ -1,3 +1,4 @@
+
 import Link from "next/link"
 import { brotliDecompress } from "zlib";
 
@@ -86,5 +87,3 @@ export default function Home() {
     
   )
 };
-
-
