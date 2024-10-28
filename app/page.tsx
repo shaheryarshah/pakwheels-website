@@ -1,5 +1,3 @@
-import Navbar from "./components/navbar";
-import Form from "./form/page";
 import Link from "next/link"
 import { brotliDecompress } from "zlib";
 
