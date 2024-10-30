@@ -1,12 +1,12 @@
 
 import Link from "next/link"
-
+import { brotliDecompress } from "zlib";
 
 
 export default function Home() {
   return (
 
-<div>
+<div className="bg-white text-black">
       <ul className="text-white font-bold flex justify-center gap-20 text-4xl mt-10 ">
         <li>Find Used Cars in Pakistan</li>
       </ul>
@@ -14,7 +14,7 @@ export default function Home() {
         <li>With thousands of cars, we have just the right one for you</li>
       </ul>
       <form className="flex flex-col w-3/3 justify-center items-center mt-5">
-        <input type="text" className="flex flex-col w-2/5 text-black" />
+        <input type="text" className="flex flex-col w-2/5 bg-blue-200 shadow-lg border-2 text-black" />
       </form>
       <div className="flex flex-col items-center">
       <button className="flex border-1 p-2 rounded-xl bg-blue-500 m-10 justify-between">Advanced Filter</button>
@@ -22,15 +22,17 @@ export default function Home() {
       <h1 className="font-bold text-center text-2xl">Sell Your Car on PakWheels and Get the Best Price</h1>
       <div className="flex justify-center items-center gap-40 mt-10">
 <div className="flex flex-col ">
-      <ul className="flex flex-col items-left ">
+      <ul className="border-2 shadow-lg border-gray-300 flex p-4 flex-col items-left ">
         <li className="font-bold text-blue-500 text-2xl py-2">Post your Ad on PakWheels</li>
         <li className="py-2">Post your Ad for Free in 3 Easy Steps</li>
         <li className="py-2">Get Genuine offers from Verified Buyers</li>
         <li className="py-2">Sell your car Fast at the Best Price</li>
         <button className="bg-red-900 text-white boder-4 rounded-2xl py-2 mt-4 " >Post Your Ad</button>
       </ul></div>
-      
-      <div className="flex flex-row justify-end ">
+      <div className="text-2xl font-semi bold">
+        <div>OR</div>
+      </div>
+      <div className="border-2 shadow-lg border-gray-300 flex p-4 flex-col items-left ">
       <ul className="flex flex-col justify-left">
         <li className="font-bold text-blue-500 text-2xl py-2">Try PakWheels Sell It For Me</li>
         <li className="py-2">Dedicated Sales Expert to Sell your Car</li>
@@ -87,3 +89,5 @@ export default function Home() {
     
   )
 };
+
+
